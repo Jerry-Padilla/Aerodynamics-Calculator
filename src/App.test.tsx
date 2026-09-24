@@ -28,4 +28,17 @@ describe('calculator workspace', () => {
     fireEvent.click(screen.getAllByRole('button', { name: /privacy/i })[0])
     expect(screen.getByText(/never sends calculation inputs/i)).toBeInTheDocument()
   })
+
+  it('links each engineer by full name to their LinkedIn profile', () => {
+    render(<App />)
+
+    expect(screen.getByRole('link', { name: 'Chase Santaga' })).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/csantaga/',
+    )
+    expect(screen.getByRole('link', { name: 'Gerardo R. Padilla Jr.' })).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/jerrypad/',
+    )
+  })
 })

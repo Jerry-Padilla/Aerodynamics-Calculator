@@ -2,6 +2,8 @@
 
 A portfolio-quality engineering workspace built by Chase and Gerard. It provides seven browser-based calculators for isentropic flow, normal shocks, oblique shocks, Prandtl–Meyer expansion fans, Fanno flow, Rayleigh flow, and natural-convection Rayleigh/Grashof numbers.
 
+**Live app:** [aerodynamics-calculator.vercel.app](https://aerodynamics-calculator.vercel.app/)
+
 The equations run as Python inside a Pyodide Web Worker. There is no calculation server, account system, or cloud database: saved cases remain in browser storage and shared cases are encoded in the URL.
 
 ## Numerical status
@@ -33,6 +35,8 @@ pnpm build
 CI runs the same checks for pull requests and pushes to `main`.
 
 ## Deploy to Vercel
+
+The production deployment is available at [https://aerodynamics-calculator.vercel.app/](https://aerodynamics-calculator.vercel.app/).
 
 1. Import this GitHub repository into Vercel.
 2. Keep the detected framework as **Vite**.

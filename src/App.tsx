@@ -107,7 +107,7 @@ export default function App() {
 
     <main>
       <section className="hero">
-        <div><p className="kicker">Engineering workspace <span>•</span> Browser-native Python</p><h1>Aerodynamics<br /><span>Calculator</span></h1><p className="hero-copy">Compressible-flow and convection tools with transparent assumptions, solver-aware validation, and no server-side data collection.</p><p className="credit">Designed & engineered by <strong>Chase + Gerard</strong></p></div>
+        <div><p className="kicker">Engineering workspace <span>•</span> Browser-native Python</p><h1>Aerodynamics<br /><span>Calculator</span></h1><p className="hero-copy">Compressible-flow and convection tools with transparent assumptions, solver-aware validation, and no server-side data collection.</p><p className="credit">Designed & engineered by <strong><a href="https://www.linkedin.com/in/csantaga/" target="_blank" rel="noreferrer" style={{ color: 'inherit' }}>Chase Santaga</a> + <a href="https://www.linkedin.com/in/jerrypad/" target="_blank" rel="noreferrer" style={{ color: 'inherit' }}>Gerardo R. Padilla Jr.</a></strong></p></div>
         <FlowGraphic id={activeId} />
       </section>
 
